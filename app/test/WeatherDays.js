@@ -15,7 +15,7 @@ const WeatherDays = () => {
 
     /*
         Funktionen som skickas till useEffect körs efter att komponenten renderats
-        Praxis är att göra API-anrop i useEffect, och spara resultatet i en property med hjälp av useState (dess 'setter'-funktion)
+        Praxis Ã¤r att göra API-anrop i useEffect, och spara resultatet i en property med hjälp av useState (dess 'setter'-funktion)
     */
     useEffect(() => {
         // Anropa getWeatherForecast med latitud och longitud för Karlstad
@@ -24,7 +24,7 @@ const WeatherDays = () => {
                 setWeatherData(SMHIdata);
             })
             .catch(error => console.error(error));
-    }, []); // Ett villkor som är tomt, en tom array, betyder att useEffect bara körs en gång, när komponenten laddas första gången
+    }, []); // Ett villkor som är tomt, en tom array, betyder att useEffect bara körs en gång, nÃ¤r komponenten laddas första gången
 
 
     if (weatherData) {
